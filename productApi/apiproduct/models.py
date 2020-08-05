@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 # Create your models here.
 
 CHOICE = [
@@ -33,7 +35,16 @@ class Book(models.Model):
         return self.name
 
 
+class Article(models.Model):
+    title = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=100, db_index=True)
+    body = models.TextField()
+    category = models.CharField(max_length=255)
+    imageUrl = models.URLField(default='aws.reqre.in/articles/image000001.jpg')
+    created_by = models.ForeignKey(User, related_name='articles', on_delete=models.CASCADE)
+    pub_date = models.DateField()
+
+    def __str__(self):
+        return self.title
 # class CovidCountry(models.Model):
-
-
 
