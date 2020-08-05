@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Product, Book
+from .models import Product, Book, Article
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
@@ -32,3 +32,17 @@ class BookSerializer(serializers.ModelSerializer):
 
         )
         model = Book
+
+class ArticleSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = (
+            'id',
+            'title',
+            'slug',
+            'body',
+            'category',
+            'imageUrl',
+            'created_by',
+            'pub_date',
+        )
+        model = Article
