@@ -13,17 +13,17 @@ the API is served at http://localhost:8000/api
 #### GET 
 
 ##### All products
-http://localhost:8000/api/products
+http://localhost:8000/api/suite/v1/products
 
 Single Product: @param 'id'
-http://localhost:8000/api/products/15
+http://localhost:8000/api/suite/v1/products/15
 
 
 ##### All Books
-http://localhost:8000/api/books
+http://localhost:8000/api/suite/v1/books
 
 Single Book: @param 'id'
-http://localhost:8000/api/book/5
+http://localhost:8000/api/suite/v1/book/5
 
 
 

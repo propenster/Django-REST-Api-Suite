@@ -1,5 +1,5 @@
-from .models import Product
-from .serializers import ProductSerializer
+from .models import Product, Book
+from .serializers import ProductSerializer, BookSerializer
 from rest_framework import generics
 
 
@@ -11,8 +11,16 @@ class ListProduct(generics.ListCreateAPIView):
 
 
 class DetailProduct(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+        queryset = Product.objects.all()
+        serializer_class = ProductSerializer
+
+class ListBooks(generics.ListCreateAPIView):
+        queryset = Book.objects.all()
+        serializer_class = BookSerializer
+
+class DetailBook(generics.RetrieveUpdateDestroyAPIView):
+        queryset = Book.objects.all()
+        serializer_class = BookSerializer        
 
         
 
