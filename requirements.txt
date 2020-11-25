@@ -23,7 +23,6 @@ pipenv==2020.8.13
 psycopg2==2.8.6
 pylint==2.6.0
 pytz==2020.1
-pywin32==228
 six==1.15.0
 sqlparse==0.3.1
 toml==0.10.1
