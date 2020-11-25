@@ -29,5 +29,4 @@ toml==0.10.1
 virtualenv==20.0.31
 virtualenv-clone==0.5.4
 whitenoise==5.2.0
-WMI==1.5.1
 wrapt==1.12.1
