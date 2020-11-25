@@ -10,7 +10,22 @@ python manage.py runserver
 
 the API is served at http://localhost:8000/api
 
-#### GET 
+#### Authenticate with TOkens
+HTTP POST - http://localhost:8000/api/suite/v1/auth/auth-token
+  param -> username
+  param -> password
+  {
+    "username": "user1",
+    "password": "pass@123"
+  }
+  
+  *ResponseContent {
+    "token": "323af066f595d022a3598f741df90607a4fe5d99"
+  }
+
+#### HEADERS
+
+"Authorization" : "Token {token}"
 
 ##### All products
 http://localhost:8000/api/suite/v1/products
