@@ -31,8 +31,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['django-api-suite.herokuapp.com']
 
 #update database url
-prod_db  =  dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(prod_db)
+# prod_db  =  dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(prod_db)
 
 
 # Application definition
