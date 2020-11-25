@@ -28,7 +28,7 @@ SECRET_KEY = '_4u+k(t*yfum0+)eclb5tb9uqpw@g59-s6p(tp%%tw2n&0m%1_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-api-suite.herokuapp.com']
+ALLOWED_HOSTS = []
 
 #update database url
 # prod_db  =  dj_database_url.config(conn_max_age=500)
