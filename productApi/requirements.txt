@@ -21,6 +21,7 @@ lib-registry==2.0.5
 mccabe==0.6.1
 pipenv==2020.8.13
 psycopg2==2.8.6
+python==3.8.5
 pylint==2.6.0
 pytz==2020.1
 pywin32==228
